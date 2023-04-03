@@ -1,0 +1,10 @@
+= assignment operator
+==  equals to 
+===  exactly equal to checks for data type 
+< checks whether a value is less than the other
+> checks whether a value is greater than d oda
+<= less than or equal to
+! NOT
+
+arrays- pop() removes d last item from list of arrays
+shift()removes the first item from d list of arrays

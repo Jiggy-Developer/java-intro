@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- parameterized functions -->
+    <!-- DRY Do Not Repeat yourself -->
+    <button onclick="sayHello('ade',33)">Ade</button>
+    <!-- when the age is set at zero java picks d 0 wen age is empty by default -->
+    <button onclick="sayHello('Tunde',)">Tunde</button>
+    <button onclick="sayHello('sola',22)">sola</button>
+
+    <script>
+        function sayHello(myName,myAge=0){
+            // concactenation
+            // alert("Hello " + myName + " I am " + myAge + " years old")
+            // template literals
+            alert(`Hello ${myName} I am ${myAge} years old`)
+        }
+    </script>
+    
+</body>
+</html>

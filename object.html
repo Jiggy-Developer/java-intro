@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <script>
+        var allStudents = []
+        var students = ["Tola", "Fola", "Samuel", "Kola"]
+        var studentOne = {
+            name: "Damilola",
+            age: 976,
+            school: "SQI College Of ICT",
+            code: function(){
+                console.log("coding is my hubby")
+            }
+}
+studentOne.code()
+
+var studentTwo = {
+    name: "Idowu",
+    age: 455,
+    school: "SQI College Of ICT",
+    eat: function(){
+        console.log("i can eat very well")
+    }
+}
+studentTwo.eat()
+
+var studentThree = {
+    name: "Alaba",
+    age: 355,
+    school: "SQI College Of ICT"
+}
+// console.log(studentOne['name']); 
+// console.log(studentOne.name)
+allStudents.push(studentOne,studentTwo,studentThree);
+console.log(allStudents[2].name,allStudents[1].age)
+    </script>
+</body>
+</html>

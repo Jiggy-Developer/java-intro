@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                position: relative;
+                max-height: 50%;
+                
+            }
+            table,td {
+                border: 1px solid;
+                width: 10vw;
+                height: 5vh;
+                margin: 10px;
+                border-radius: 10px;
+            }
+            #input,button {
+                padding: 10px;
+                margin: 10px;
+            }
+            #container {
+                position: relative;
+                border: 2px solid;
+                width: 30vw;
+                padding: 10px;
+                background: linear-gradient(orange, skyblue);
+                border-radius: 5px 30px 5px 30px;
+                left: 20rem;
+                top: 2rem;
+            }
+            #input {
+                width: 26vw;
+                font-weight: bold;
+            }
+            button {
+                width: 13vw;
+                height: 7vh;
+                font-weight: bold;
+                border-radius: 10px;
+            }
+            #disp{font-weight: bold;}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <input type="text" placeholder="Enter the number you want" id="input"><br>
+            <button id="multiplication" onclick="multiplication()"> Create Multiplication Table</button>
+            <button id="addition" onclick="addition()"> Create Addition Table</button>
+            <button id="subtraction" onclick="subtraction()"> Create Subtraction Table</button>
+            <button id="divition" onclick="division()"> Create Division Table</button>
+            <div>
+                <table id="disp">
+                </table>
+            </div>
+        </div>
+        <script>
+            function multiplication (){
+                var y = document.getElementById("input").value
+                for(var i = 1;i<=12;i++) {
+                    console.log(`${(y)} * ${i} = ${(y)*i}`);
+                disp.innerHTML += `
+                    <table><tr><td>${Number(y)} * ${(i)} = ${y*i}</tr></td></table>
+                `
+                }
+            }
+
+            function addition (){
+                var y = document.getElementById("input").value
+                for(var i = 1;i<=12;i++) {
+                    console.log(`${(y)} + ${i} = ${(y)+i}`);
+                disp.innerHTML += `
+                    <tr><td>${Number(y)} + ${(i)} = ${Number(y)+i}</tr></td>
+                `
+                }
+            }
+            
+            function subtraction (){
+                var y = document.getElementById("input").value
+                for(var i = 1;i<=12;i++) {
+                    console.log(`${(y)} - ${i} = ${(y)-i}`);
+                disp.innerHTML += `
+                    <tr><td>${Number(y)} - ${(i)} = ${y-i}</tr></td>
+                `
+                }
+            }
+
+            function division (){
+                var y = document.getElementById("input").value
+                for(var i = 1;i<=12;i++) {
+                    console.log(`${(y)} / ${i} = ${(y)/i}`);
+                disp.innerHTML += `
+                    <tr><td>${Number(y)} / ${(i)} = ${y/i}</tr></td>
+                `
+                }
+            }
+
+            // alternatively
+            // function multiply(){
+            //     for (var i =1; i<=12; i++){
+            //         console.log(`$(user.value))
+            //     }
+            // }
+
+        </script>
+    </body>
+</html>
